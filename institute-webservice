@@ -10,3 +10,8 @@ authserver:
     hostname: localhost
     port: 8899
     contextPath: userauth
+security:
+  oauth2:
+    client:
+      accessTokenUri: http://localhost:8899/oauth/access_token
+
