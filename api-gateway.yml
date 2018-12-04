@@ -11,7 +11,7 @@ authserver:
 
 zuul:
   routes:
-    user-webservice: /api/institute/**
+    institute-webservice: /api/institute/**
 
 eureka:
   client:
