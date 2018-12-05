@@ -28,14 +28,3 @@ security:
 logging:
   level:
     org.springframework.security: DEBUG
-
-datasource:
-    url: jdbc:mysql://localhost:3306/auth	      
-      username: kaushik	        
-      password: root@123	    
-      driver-class: com.mysql.jdbc.Driver
-   jpa:
-      database-platform: org.hibernate.dialect.MySQLDialect	
-      show-sql: false
-      hibernate:	
-        ddl-auto: create
