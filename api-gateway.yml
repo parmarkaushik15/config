@@ -10,7 +10,7 @@ management:
 authserver:
     hostname: localhost
     port: 8899
-    contextPath: userauth
+    contextPath: auth
 
 
 uul:
