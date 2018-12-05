@@ -1,6 +1,6 @@
 server:
   port: 8899
-  contextPath: /userauth
+  contextPath: /auth
 
 eureka:
   client:
@@ -10,29 +10,8 @@ eureka:
 security:
   user:
     password: password
+  sessions: if-required
 
-# Datasource and JPA configuration to be used for storing the OAuth authorization details
-# and token store
-spring:
-  datasource:
-    url: jdbc:mysql://localhost:3306/nobble_oauth
-    username: kaushik
-    password: root@123
-    driver-class: com.mysql.jdbc.Driver
-
-  jpa:
-    database-platform: org.hibernate.dialect.MySQLDialect
-    show-sql: false
-    hibernate:
-      ddl-auto: create
-
-
-logging:
-  level:
-    ROOT: ERROR
-    org.springframework.web: ERROR
-    com.enrico.microservices: DEBUG
-  file:  /tmp/logs/application.log
-  pattern:
-    console: "%d{yyyy-MM-dd HH:mm:ss} - %msg%n"
-    file: "%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} - %msg%n"
+management:
+  security:
+    enabled: false
