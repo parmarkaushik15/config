@@ -21,7 +21,7 @@ datasource:	    resource:
       username: kaushik	        
       password: root@123	    
       driver-class: com.mysql.jdbc.Driver
-   jpa:	logging:
+   jpa:
       database-platform: org.hibernate.dialect.MySQLDialect	
       show-sql: false
       hibernate:	
